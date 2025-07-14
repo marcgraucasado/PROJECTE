@@ -1,6 +1,6 @@
 # Sistema de Entrenamiento de Respuesta a Estímulos (ESP32‑S3)
 
-> **Autores:** Renato Parrales · Marc Grau Casado
+> **Autors:** Marc Grau Casado
 > **Asignatura:** Procesadores Digitales (curso 2025‑2026)
 
 ---
@@ -65,9 +65,8 @@ El dispositivo muestra los resultados en una **pantalla OLED 128×64** y publi
 1. **Inicio** – encendido del sistema.
 2. **Menú** – selección de modo/dificultad en la OLED mediante pulsadores.
 3. **Generación de estímulo** – activación matriz LED + buzzer.
-4. **Medición** – el ESP32‑S3 cronometra la respuesta.
-5. **Resultados** – se muestran tiempos y ranking en OLED y web.
-6. **Repetir / Fin** – reinicio o apagado.
+4. **Medición** – una vez empieza el modo de juego hay una cuenta atrás de 5s y empieza el juego. El ESP32‑S3 cronometra la respuesta de reacción. Se ha añadido que por cada tres fallos cometidos, se bajará un punto de la nota final máxima.
+5. **Resultados** – se muestra la nota final durante 15s y luego te da la opción de elegir si quieres repetir el juego indicando que modo (45s). Si no se elige nada se apaga automaticamente. Las 3 mejores notas junto con sus tiempos se mostraran en el ranking de la página web.
 
 ---
 
@@ -121,14 +120,4 @@ $ pio run -t upload --upload-port /dev/ttyUSB0
 * Puntuaciones objetivo: **8 (fácil)** · **6 (normal)** · **4 (difícil)**.
 * Cada incremento de dificultad reduce la puntuación en ≈2 puntos.
 
----
 
-## 📝 Licencia
-
-Este proyecto se distribuye bajo la licencia MIT (ver `LICENSE`).
-
----
-
-## 🤝 Contacto
-
-¿Preguntas o mejoras? Abre un *issue* o escribe a **@tuusuario** en GitHub.
