@@ -1,19 +1,19 @@
 # Sistema de Entrenamiento de Respuesta a Estímulos (ESP32‑S3)
 
-> **Autors:** Marc Grau Casado
+> **Autores:** Marc Grau Casado
 
 > **Asignatura:** Procesadores Digitales (curso 2025‑2026)
 
 ---
 
-## 📑 Descripción
+## Descripción
 
 Sistema interactivo basado en **ESP32‑S3** que mide y mejora el tiempo de reacción del usuario mediante estímulos visuales (matriz LED 8×8), sonoros (buzzer) y táctiles (pulsadores / sensores IR).
 El dispositivo muestra los resultados en una **pantalla OLED 128×64** y publica un **ranking** persistente a través de un **servidor web local** (ESPAsyncWebServer) en modo *Access Point*.
 
 ---
 
-## 🎯 Funcionalidades
+## Funcionalidades
 
 * **Tres niveles de dificultad** (fácil, medio, difícil) con parametrización del intervalo de estímulos.
 * **Estímulos aleatorios** combinando matriz LED y sonido.
@@ -24,7 +24,7 @@ El dispositivo muestra los resultados en una **pantalla OLED 128×64** y publi
 
 ---
 
-## 🖼️ Diagrama de bloques
+## Diagrama de bloques
 
 *Inserta aquí la imagen `diagrama_bloques.png` o similar.*
 
@@ -43,7 +43,7 @@ El dispositivo muestra los resultados en una **pantalla OLED 128×64** y publi
 
 ---
 
-## 💸 Cálculo de costes
+## Cálculo de costes
 
 | Componente             | Cantidad | Precio (EUR) |
 | ---------------------- | :------: | -----------: |
@@ -61,7 +61,7 @@ El dispositivo muestra los resultados en una **pantalla OLED 128×64** y publi
 
 ---
 
-## 🔄 Flujo de funcionamiento
+## Flujo de funcionamiento
 
 1. **Inicio** – encendido del sistema.
 2. **Menú** – selección de modo/dificultad en la OLED mediante pulsadores.
@@ -71,7 +71,7 @@ El dispositivo muestra los resultados en una **pantalla OLED 128×64** y publi
 
 ---
 
-## 🔧 Componentes principales
+## Componentes principales
 
 | Módulo                       | Función                                                                |
 | ---------------------------- | ---------------------------------------------------------------------- |
@@ -84,7 +84,7 @@ El dispositivo muestra los resultados en una **pantalla OLED 128×64** y publi
 
 ---
 
-## 🚀 Puesta en marcha
+## Puesta en marcha
 
 ```bash
 # Clonar proyecto (privado)
@@ -98,11 +98,11 @@ $ pio run
 $ pio run -t upload --upload-port /dev/ttyUSB0
 ```
 
-> ⚠️ Reemplaza las credenciales Wi‑Fi por valores genéricos en `config.h` antes de publicar el repo.
+> Reemplaza las credenciales Wi‑Fi por valores genéricos en `config.h` antes de publicar el repo.
 
 ---
 
-## 📁 Estructura del repositorio
+## Estructura del repositorio
 
 ```
 ├── src/            # Código fuente (main.cpp, handlers, utils…)
@@ -115,7 +115,7 @@ $ pio run -t upload --upload-port /dev/ttyUSB0
 
 ---
 
-## 📈 Resultados esperados
+## Resultados esperados
 
 * Tiempo medio de reacción en población general \~200 ms.
 * Puntuaciones objetivo: **8 (fácil)** · **6 (normal)** · **4 (difícil)**.
