@@ -26,7 +26,7 @@ El dispositivo muestra los resultados en una **pantalla OLED 128×64** y publi
 
 ## Diagrama de bloques
 
-*Inserta aquí la imagen `diagrama_bloques.png` o similar.*
+*Inserción de la imagen `diagrama_bloques.png`.*
 
 ```
 ┌────────┐      ┌────────────┐      ┌──────────┐
