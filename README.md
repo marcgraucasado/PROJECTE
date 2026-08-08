@@ -29,15 +29,15 @@ El dispositivo muestra los resultados en una **pantalla OLED 128×64** y publi
 *Inserción de la imagen `diagrama_bloques.png`.*
 
 ```
-┌────────┐      ┌────────────┐      ┌──────────┐
-│Matriz  │      │  ESP32‑S3  │      │ Pantalla │
-│ LED 8×8│◀────▶│(CPU + Wi‑Fi)│────▶│  OLED    │
-└────────┘      └────────────┘      └──────────┘
+┌────────┐      ┌───────────────┐      ┌──────────┐
+│ Matriz │      │    ESP32‑S3   │      │ Pantalla │
+│LED 8×8 │◀────▶│(CPU + Wi‑Fi)  │ ────▶│  OLED    │
+└────────┘      └────────────── ┘      └──────────┘
      ▲                ▲  ▲                ▲
      │                │  │                │
-┌─────────┐        ┌───┴───┐          ┌────┴────┐
-│Buzzer   │        │Pulsador│          │  Web    │
-└─────────┘        │/Sensor │          │Cliente  │
+┌─────────┐        ┌───┴────┐          ┌────┴────┐
+│ Buzzer  │        │Pulsador│          │   Web   │
+└─────────┘        │/Sensor │          │ Cliente │
                    └────────┘          └─────────┘
 ```
 
